@@ -1,8 +1,8 @@
 version: "3"
 services:
-  node:
-    container_name: "node-container"
+  ubuntu:
+    container_name: "ubuntu-container"
     build: .
     environment:
       - PORT:9999
-    command: node server.js
+    command: /bin/bash
